@@ -1,6 +1,6 @@
 ﻿using DinkToPdf;
 
-var converter = new BasicConverter(new PdfTools());
+var converter = new SynchronizedConverter(new PdfTools());
 
 string template = System.IO.File.ReadAllText(@"template.html");
 
