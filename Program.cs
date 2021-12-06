@@ -15,12 +15,8 @@ var doc = new HtmlToPdfDocument
     Objects = {
         new ObjectSettings
         {
-            Page = "https://google.com/",
-        },
-        new ObjectSettings
-        {
             PagesCount = true,
-            HtmlContent = "template.html",
+            HtmlContent = @"<html><h1>Hello, world</h1></html>",
             WebSettings = { DefaultEncoding = "utf-8" },
             HeaderSettings = { FontSize = 9, Right = "Page [page] of [toPage]", Line = true, Spacing = 2.812 }
         },
@@ -33,17 +29,7 @@ var doc = new HtmlToPdfDocument
         },
         new ObjectSettings
         {
-            PagesCount = true,
-            HtmlContent = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur mauris eget ultrices  iaculis. Ut                               odio viverra, molestie lectus nec, venenatis turpis.",
-            WebSettings = { DefaultEncoding = "utf-8" },
-            HeaderSettings = { FontSize = 9, Right = "Page [page] of [toPage]", Line = true, Spacing = 2.812 }
-        },
-        new ObjectSettings
-        {
-            PagesCount = true,
-            HtmlContent = @"<html><h1>Hello, world</h1></html>",
-            WebSettings = { DefaultEncoding = "utf-8" },
-            HeaderSettings = { FontSize = 9, Right = "Page [page] of [toPage]", Line = true, Spacing = 2.812 }
+            Page = "https://en.wikipedia.org/wiki/Lorem_ipsum",
         }
     }
 };
